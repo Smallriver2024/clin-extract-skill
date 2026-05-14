@@ -14,22 +14,21 @@ surveys, and other systematic clinical literature chart abstraction tasks.
 
 ## Installation
 
-### Natural language (via Claude Code)
+### Method 1: One-Click Install via Natural Language
 
-1. Install [Claude Code](https://docs.anthropic.com/en/docs/claude-code).
-2. Clone this repository or copy the `clin-extract/` directory into your project:
-   ```bash
-   git clone https://github.com/Smallriver2024/clin-extract-skill.git
-   ```
-3. Move the `clin-extract/` folder into your working directory. Claude Code will
-   automatically discover and load `SKILL.md` when you trigger the skill with
-   keywords such as "clinical data extraction", "structured literature mining",
-   "prediction model extraction", or "build an extraction pipeline".
-4. In your Claude Code session, describe your extraction task. The skill will
-   guide you through schema design, collect your API credentials, and generate
-   customized Python scripts.
+Open Claude Code in any project, and simply say:
 
-### Script-based installation (standalone)
+> "Please install the clin-extract skill from https://github.com/Smallriver2024/clin-extract-skill"
+
+Or in Chinese:
+
+> "帮我从 https://github.com/Smallriver2024/clin-extract-skill 安装 clin-extract 技能"
+
+Claude Code will automatically clone the repository and set up the skill under
+`~/.claude/skills/clin-extract/` (global) or `.claude/skills/clin-extract/`
+(project-local). Once installed, it's immediately available — no restart needed.
+
+### Method 2: Manual Install
 
 If you prefer to run the template scripts directly without Claude Code:
 
